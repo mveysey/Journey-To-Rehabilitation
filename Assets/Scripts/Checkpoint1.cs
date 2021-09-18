@@ -6,14 +6,14 @@ public class Checkpoint1 : MonoBehaviour
 {
     
     public GameObject climb1;
-    public GameObject proneArms2;
-    public GameObject anxiety3;
+    public GameObject isotonicScaption2;
+    public GameObject healing3;
     public GameObject tinSoldier4;
     public GameObject pushUpPlus5;
     public GameObject depression6;
-    public GameObject isotonicScaption7;
+    public GameObject proneArms7;
     public GameObject pronePressUps8;
-    public GameObject healing9;
+    public GameObject anxiety9;
 
     public GameObject Trigger1;
     public GameObject Trigger2;
@@ -39,36 +39,33 @@ public class Checkpoint1 : MonoBehaviour
     public float fallHeight;
     public GameObject player;
 
-    void Update()
+   /* void Update()
     {
         if (player.transform.position.y < fallHeight)
             player.transform.position = checkpointLocation.position;
-    }
+    }*/
 
     void OnTriggerEnter(Collider other)
     { 
 
-        /*if (other.gameObject.tag == "climb")
+        if (other.gameObject.tag == "Respawn")
         {
-            Trigger1.SetActive(false);
-            climb1.SetActive(true);
-            checkpointLocation1.transform.position = checkpointLocation.position;
-        }*/
+            player.transform.position = checkpointLocation.position;
+        }
 
-
-        if (other.gameObject.tag == "proneArms")
+        if (other.gameObject.tag == "isotonicScaption")
         {
             Trigger2.SetActive(false);
-            proneArms2.SetActive(true);
+            isotonicScaption2.SetActive(true);
             checkpointLocation2.transform.position = checkpointLocation.position;
         }
-        if (other.gameObject.tag == "anxiety")
+        if (other.gameObject.tag == "Healing")
         {
             Trigger3.SetActive(false);
-            anxiety3.SetActive(true);
+            healing3.SetActive(true);
             checkpointLocation3.transform.position = checkpointLocation.position;
 
-            proneArms2.SetActive(false);
+            isotonicScaption2.SetActive(false);
         }
         if (other.gameObject.tag == "tinSoldier")
         {
@@ -76,7 +73,7 @@ public class Checkpoint1 : MonoBehaviour
             tinSoldier4.SetActive(true);
             checkpointLocation4.transform.position = checkpointLocation.position;
 
-            anxiety3.SetActive(false);
+            healing3.SetActive(false);
         }
         if (other.gameObject.tag == "pushUpPlus")
         {
@@ -94,10 +91,10 @@ public class Checkpoint1 : MonoBehaviour
 
             pushUpPlus5.SetActive(false);
         }
-        if (other.gameObject.tag == "isotonicScaption")
+        if (other.gameObject.tag == "proneArms")
         {
             Trigger7.SetActive(false);
-            isotonicScaption7.SetActive(true);
+            proneArms7.SetActive(true);
             checkpointLocation7.transform.position = checkpointLocation.position;
 
             depression6.SetActive(false);
@@ -108,12 +105,12 @@ public class Checkpoint1 : MonoBehaviour
             pronePressUps8.SetActive(true);
             checkpointLocation8.transform.position = checkpointLocation.position;
 
-            isotonicScaption7.SetActive(false);
+            proneArms7.SetActive(false);
         }
-        if (other.gameObject.tag == "healing")
+        if (other.gameObject.tag == "anxiety")
         {
             Trigger9.SetActive(false);
-            healing9.SetActive(true);
+            anxiety9.SetActive(true);
             checkpointLocation9.transform.position = checkpointLocation.position;
 
             pronePressUps8.SetActive(false);
