@@ -39,12 +39,6 @@ public class Checkpoint1 : MonoBehaviour
     public float fallHeight;
     public GameObject player;
 
-   /* void Update()
-    {
-        if (player.transform.position.y < fallHeight)
-            player.transform.position = checkpointLocation.position;
-    }*/
-
     void OnTriggerEnter(Collider other)
     { 
 
