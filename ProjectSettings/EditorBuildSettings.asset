@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/VRIF/BNG Framework/Scenes/XR Demo.unity
     guid: a1360534006d3f845bc79b46b93cfec5
   - enabled: 1
+    path: Assets/Scenes/PhysioRoom.unity
+    guid: 512643944d7722a4e8c30bea7ad2f04f
+  - enabled: 1
     path: Assets/VRIF/BNG Framework/Scenes/Physics Hands.unity
     guid: 34a4579517c578e4080d0a6ef2c96294
   m_configObjects:
