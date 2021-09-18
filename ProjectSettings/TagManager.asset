@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - climb
+  - proneArms
+  - anxiety
+  - tinSoldier
+  - pushUpPlus
+  - depression
+  - isotonicScaption
+  - pronePressUps
+  - Healing
   layers:
   - Default
   - TransparentFX

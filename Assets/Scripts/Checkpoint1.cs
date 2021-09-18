@@ -48,12 +48,12 @@ public class Checkpoint1 : MonoBehaviour
     void OnTriggerEnter(Collider other)
     { 
 
-        if (other.gameObject.tag == "climb")
+        /*if (other.gameObject.tag == "climb")
         {
             Trigger1.SetActive(false);
             climb1.SetActive(true);
             checkpointLocation1.transform.position = checkpointLocation.position;
-        }
+        }*/
 
 
         if (other.gameObject.tag == "proneArms")
@@ -67,42 +67,56 @@ public class Checkpoint1 : MonoBehaviour
             Trigger3.SetActive(false);
             anxiety3.SetActive(true);
             checkpointLocation3.transform.position = checkpointLocation.position;
+
+            proneArms2.SetActive(false);
         }
         if (other.gameObject.tag == "tinSoldier")
         {
             Trigger4.SetActive(false);
             tinSoldier4.SetActive(true);
             checkpointLocation4.transform.position = checkpointLocation.position;
+
+            anxiety3.SetActive(false);
         }
         if (other.gameObject.tag == "pushUpPlus")
         {
             Trigger5.SetActive(false);
             pushUpPlus5.SetActive(true);
             checkpointLocation5.transform.position = checkpointLocation.position;
+
+            tinSoldier4.SetActive(false);
         }
         if (other.gameObject.tag == "depression")
         {
             Trigger6.SetActive(false);
             depression6.SetActive(true);
             checkpointLocation6.transform.position = checkpointLocation.position;
+
+            pushUpPlus5.SetActive(false);
         }
         if (other.gameObject.tag == "isotonicScaption")
         {
             Trigger7.SetActive(false);
             isotonicScaption7.SetActive(true);
             checkpointLocation7.transform.position = checkpointLocation.position;
+
+            depression6.SetActive(false);
         }
         if (other.gameObject.tag == "pronePressUps")
         {
             Trigger8.SetActive(false);
             pronePressUps8.SetActive(true);
             checkpointLocation8.transform.position = checkpointLocation.position;
+
+            isotonicScaption7.SetActive(false);
         }
         if (other.gameObject.tag == "healing")
         {
             Trigger9.SetActive(false);
             healing9.SetActive(true);
             checkpointLocation9.transform.position = checkpointLocation.position;
+
+            pronePressUps8.SetActive(false);
         }
     }
 }
