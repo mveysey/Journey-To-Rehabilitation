@@ -35,6 +35,7 @@ public class Checkpoint1 : MonoBehaviour
     public GameObject checkpointLocation8;
     public GameObject checkpointLocation9;
 
+
     public Transform checkpointLocation;
     public float fallHeight;
     public GameObject player;
@@ -52,6 +53,8 @@ public class Checkpoint1 : MonoBehaviour
             Trigger2.SetActive(false);
             isotonicScaption2.SetActive(true);
             checkpointLocation2.transform.position = checkpointLocation.position;
+
+
         }
         if (other.gameObject.tag == "Healing")
         {
